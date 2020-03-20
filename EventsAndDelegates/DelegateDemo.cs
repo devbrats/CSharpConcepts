@@ -1,4 +1,5 @@
 ﻿using System;
+using ConceptDemo.Contracts;
 
 namespace EventsAndDelegates
 {
@@ -8,10 +9,11 @@ namespace EventsAndDelegates
     /// <summary>
     /// Delegate Demo
     /// </summary>
-    public class DelegateDemo:Demo
+    public class DelegateDemo:IConceptDemo
     {
-        public override void ShowDemo()
+        public void ShowDemo()
         {
+            Console.WriteLine("Delegates demo:");
             //Declare and Instantiation
             Delegate1 delegate1 = MethodsRepository.Display;
 

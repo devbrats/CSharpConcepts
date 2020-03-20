@@ -1,0 +1,16 @@
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.UI.deps.json
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.UI.runtimeconfig.json
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.UI.runtimeconfig.dev.json
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.UI.dll
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.UI.pdb
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.Contracts.dll
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\EventsAndDelegates.dll
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\EventsAndDelegates.pdb
+E:\Projects\CSharpConcepts\ConceptDemo.UI\bin\Debug\netcoreapp2.2\ConceptDemo.Contracts.pdb
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.csprojAssemblyReference.cache
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.csproj.CoreCompileInputs.cache
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.AssemblyInfoInputs.cache
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.AssemblyInfo.cs
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.csproj.CopyComplete
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.dll
+E:\Projects\CSharpConcepts\ConceptDemo.UI\obj\Debug\netcoreapp2.2\ConceptDemo.UI.pdb

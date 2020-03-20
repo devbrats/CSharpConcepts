@@ -1,0 +1,9 @@
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\bin\Debug\netcoreapp2.2\ConceptDemo.Contracts.deps.json
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\bin\Debug\netcoreapp2.2\ConceptDemo.Contracts.dll
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\bin\Debug\netcoreapp2.2\ConceptDemo.Contracts.pdb
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.csprojAssemblyReference.cache
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.csproj.CoreCompileInputs.cache
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.AssemblyInfoInputs.cache
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.AssemblyInfo.cs
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.dll
+E:\Projects\CSharpConcepts\ConceptDemo.Contracts\obj\Debug\netcoreapp2.2\ConceptDemo.Contracts.pdb
