@@ -3,6 +3,12 @@
 ################################################################################
 
 /EventsAndDelegates/obj
-/EventsAndDelegates/bin/Debug/netcoreapp2.2
+/EventsAndDelegates/bin/Debug
 /.vs/ProjectSettings.json
 /.vs
+/ConceptDemo.Contracts/obj
+/ConceptDemo.UI/obj
+/Fundamentals/obj
+/ConceptDemo.Contracts/bin/Debug
+/ConceptDemo.UI/bin/Debug
+/Fundamentals/bin/Debug
