@@ -2,6 +2,6 @@
 {
     public abstract class AbstractDemoHandler
     {
-        public abstract IDemoFactory GetDemoFactory();
+        public abstract IDemoFactory SelectDemoFactory();
     }
 }
