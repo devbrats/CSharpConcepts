@@ -1,6 +1,7 @@
 ﻿using ConceptDemo.Contracts;
 using EventsAndDelegates;
 using System;
+using Fundamentals;
 
 namespace ConceptDemo.UI
 {
@@ -15,7 +16,7 @@ namespace ConceptDemo.UI
                 case 1:
                     return new DelegateDemoFactory();
                 case 2:
-                    return null;
+                    return new FundamentalsDemoFactory();
                 default:
                     return null;
             }
@@ -25,7 +26,7 @@ namespace ConceptDemo.UI
         {
             Console.WriteLine("Demo Type:");
             Console.WriteLine("1.Events and Delegate");
-            Console.WriteLine("2.");
+            Console.WriteLine("2.Fundamentals Demo");
             Console.Write("Please Enter your choice for the demo type : ");
         }
     }
