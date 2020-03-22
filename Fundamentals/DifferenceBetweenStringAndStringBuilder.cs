@@ -24,7 +24,7 @@ namespace Fundamentals
         private void AnalyzeString()
         {
             Console.WriteLine("\n");
-            Console.WriteLine("*******************************");
+            Console.WriteLine(Utility.LineSeprator);
             Console.WriteLine("string analysis");
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
@@ -41,14 +41,14 @@ namespace Fundamentals
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
             Console.WriteLine("\nEverytime when a string operation is performed new string object is created.\nstring is an immutable type object.");
-            Console.WriteLine("*******************************");
+            Console.WriteLine(Utility.LineSeprator);
 
         }
 
         private void AnalyzeStringBuilder()
         {
             Console.WriteLine("\n");
-            Console.WriteLine("*******************************");
+            Console.WriteLine(Utility.LineSeprator);
             Console.WriteLine("StringBuilder analysis");
             Console.WriteLine("Object HashCode: " + _stringBuilderType?.GetHashCode());
             Console.WriteLine("Text Added.");
@@ -65,7 +65,7 @@ namespace Fundamentals
             Console.WriteLine("String Builder Value: " + _stringBuilderType);
             Console.WriteLine("Object HashCode: " + _stringBuilderType.GetHashCode());
             Console.WriteLine("\nEverytime when a operation is performed object is not changed only content is changed.\nStringBuilder is a mutable type object.");
-            Console.WriteLine("*******************************");
+            Console.WriteLine(Utility.LineSeprator);
         }
     }
 }

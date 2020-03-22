@@ -26,11 +26,11 @@ namespace EventsAndDelegates
 
         private void ShowDemoOptions()
         {
-            Console.WriteLine("\n******************************************");
+            Console.WriteLine("\n"+Utility.LineSeprator);
             Console.WriteLine("Events and Delegates Demo: ");
-            Console.WriteLine("1.Delegate");
-            Console.WriteLine("2.Built In Delegates") ;
-            Console.Write("Please Enter your choice for the demo type : ");
+            Console.WriteLine("1. Delegate");
+            Console.WriteLine("2. Built In Delegates") ;
+            Console.Write("Please enter choice for delgates demo type : ");
         }
         
     }

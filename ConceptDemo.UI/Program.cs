@@ -14,24 +14,26 @@ namespace ConceptDemo.UI
                 if (choice == 1)
                 {
                     var demoHandler = new CSharpDemoHandler();
-                    demoFactory = demoHandler.GetDemoFactory();
+                    demoFactory = demoHandler.SelectDemoFactory();
                     if (demoFactory == null)
                     {
                         Console.WriteLine("Selected demo not available");
                         return;
                     }
                 }
-               
-                var demo = demoFactory?.GetDemo();
+               Console.Clear();
+                var demo = demoFactory?.SelectDemo();
                 if (demo == null)
                 {
                     Console.WriteLine("Selected demo not available");
                     return;
                 }
+
+                Console.Clear();
                 demo.ShowDemo();
 
-                Console.WriteLine("********************************");
-                Console.WriteLine("\nOptions:");
+                Console.WriteLine("\n"+Utility.LineSeprator);
+                Console.WriteLine("Options:");
                 Console.WriteLine("1. Go To Main Menu.");
                 Console.WriteLine("2. Go To Sub Menu.");
                 Console.Write("Please select your choice: ");

@@ -15,7 +15,7 @@ namespace Fundamentals
                 case 1:
                     return new DifferenceBetweenStringAndStringBuilder();
                 case 2:
-                    return null;
+                    return new DifferenceBetweenOutAndRef();
                 default:
                     return null;
             }
@@ -23,11 +23,11 @@ namespace Fundamentals
 
         private void ShowDemoOptions()
         {
-            Console.WriteLine("\n******************************************");
+            Console.WriteLine("\n"+Utility.LineSeprator);
             Console.WriteLine("Fundamentals Demo: ");
-            Console.WriteLine("1.Difference between string and stringbuilder");
-            Console.WriteLine("2.Difference between 'out' and 'ref'");
-            Console.Write("Please Enter your choice for the demo type : ");
+            Console.WriteLine("1. Difference between string and stringbuilder");
+            Console.WriteLine("2. Difference between 'out' and 'ref'");
+            Console.Write("Please enter your choice for fundamentals demo type : ");
         }
     }
 }
