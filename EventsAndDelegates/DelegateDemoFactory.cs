@@ -8,7 +8,7 @@ namespace EventsAndDelegates
     /// </summary>
     public class DelegateDemoFactory:IDemoFactory
     {
-        public  IConceptDemo GetDemo()
+        public  IConceptDemo SelectDemo()
         {
             ShowDemoOptions();
             int demoChoice = int.Parse(Console.ReadLine());

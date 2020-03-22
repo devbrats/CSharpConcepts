@@ -7,7 +7,7 @@ namespace ConceptDemo.UI
 {
     public class CSharpDemoHandler : AbstractDemoHandler
     {
-        public override IDemoFactory GetDemoFactory()
+        public override IDemoFactory SelectDemoFactory()
         {
             ShowDemoOptions();
             var demoChoice = int.Parse(Console.ReadLine());
