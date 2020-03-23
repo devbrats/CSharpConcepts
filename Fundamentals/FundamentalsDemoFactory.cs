@@ -16,6 +16,8 @@ namespace Fundamentals
                     return new DifferenceBetweenStringAndStringBuilder();
                 case 2:
                     return new DifferenceBetweenOutAndRef();
+                case 3:
+                    return new DifferenceBetweenPassingReferenceTypeUsingRefKeywordAndWithoutRef();
                 default:
                     return null;
             }
@@ -27,6 +29,7 @@ namespace Fundamentals
             Console.WriteLine("Fundamentals Demo: ");
             Console.WriteLine("1. Difference between string and stringbuilder");
             Console.WriteLine("2. Difference between 'out' and 'ref'");
+            Console.WriteLine("3. Difference between passing reference type value with or without using 'ref' keyword");
             Console.Write("Please enter your choice for fundamentals demo type : ");
         }
     }
