@@ -25,7 +25,7 @@ namespace ConceptDemo.UI
         private void ShowDemoOptions()
         {
             Console.WriteLine(Utility.LineSeprator);
-            Console.WriteLine("Availabel CSharp Demo:");
+            Console.WriteLine("Available CSharp Demo:");
             Console.WriteLine("1. Events and Delegate");
             Console.WriteLine("2. Fundamentals Demo");
             Console.Write("Please Enter your choice for the demo type : ");
