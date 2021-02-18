@@ -15,6 +15,7 @@ namespace EventsAndDelegates
 
         public EventExampleClass()
         {
+            // Event Registering
             TestEvent += Method1;
             ParametrisedTestEvent += Method1;
         }
@@ -23,6 +24,7 @@ namespace EventsAndDelegates
         {
             Console.WriteLine("**********");
             Console.WriteLine("Raising TestEvent");
+            // Event Invoked
             TestEvent?.Invoke();
             Console.WriteLine("**********");
         }
@@ -31,18 +33,19 @@ namespace EventsAndDelegates
         {
             Console.WriteLine("**********");
             Console.WriteLine("Raising Parametrised TestEvent");
+            // Event Invoked
             ParametrisedTestEvent?.Invoke(input);
             Console.WriteLine("**********");
         }
 
         private void Method1()
         {
-            Console.WriteLine(this+"\nInside Method 1.");
+            Console.WriteLine(this+": Inside Method 1.");
         }
 
         public void Method1(string input)
         {
-            Console.WriteLine(this + "\nInside parametrised Method 1.");
+            Console.WriteLine(this + ": Inside parametrised Method 1.");
             Console.WriteLine("Input Value : " + input);
         }
 

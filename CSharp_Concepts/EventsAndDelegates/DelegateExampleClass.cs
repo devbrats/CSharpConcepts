@@ -2,7 +2,7 @@
 
 namespace EventsAndDelegates
 {
-    //Define Delegate
+    // Delegate Definition
     public delegate void TestDelegate();
 
     public delegate void ParametrisedTestDelegate(string input);
@@ -11,16 +11,16 @@ namespace EventsAndDelegates
 
     public class DelegateExampleClass
     {
-        //Delegate Instantiation
+        // Delegate Instantiation
         public TestDelegate TestDelegateObj;
         public ParametrisedTestDelegate ParametrisedTestDelegateObj;
         public TestDelegateWithReturnValue TestDelegateWithReturnValueObj;
 
         public DelegateExampleClass()
         {
-            //Delegate assignment
+            // Delegate Registering
             TestDelegateObj += Method1;
-            ParametrisedTestDelegateObj += Method1;
+            ParametrisedTestDelegateObj += ParametrisedMethod1;
             TestDelegateWithReturnValueObj += Method3;
             TestDelegateObj += Method2;
             // += is used to assign multiple methods to a single delgate making it as multicast delegate.
@@ -40,17 +40,17 @@ namespace EventsAndDelegates
             Console.WriteLine("**********\n");
         }
 
-        public void Method1(string input)
-        {
-            Console.WriteLine("**********");
-            Console.WriteLine(this+"\nInside parametrised Method 1.");
-            Console.WriteLine("Input Value : "+input);
-            Console.WriteLine("**********\n");
-        }
-
         public string Method3()
         {
             return this+"Inside Method 3.";
+        }
+
+        public void ParametrisedMethod1(string input)
+        {
+            Console.WriteLine("**********");
+            Console.WriteLine(this + "\nInside parametrised Method 1.");
+            Console.WriteLine("Input Value : " + input);
+            Console.WriteLine("**********\n");
         }
     }
 }
