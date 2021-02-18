@@ -1,35 +1,6 @@
-# EventsAndDelegates
-This project contains the basic concept of events and delegates and how to use them
+# CSharpConcepts
+This project contains the basic concept of C# and how to use them
 
- #### 1.Define Delegate
- public **delegate** void Delegate1();<br/>
- public **delegate** void Delegate2(int x);
+ #### 1.Events and Delegates
  
- #### 2.Declare and Instantiation
- Delegate1 delegate1 = MethodsRepository.Display;
- 
- #### 3.Invoke
- delegate1.Invoke();
- 
- #### 4.Add
- delegate1 += MethodsRepository.TestDisplay;
- delegate1.Invoke();
- 
- #### 5.Remove
- delegate1 -= MethodsRepository.Display;
- delegate1.Invoke();
- 
- #### 6.Calling method with parameter using delegate
- Delegate2 delegate2 = MethodsRepository.DisplayValues;<br/>
- delegate2.Invoke(8);
- 
- #### 7.Reinstantiate and Invoke
- delegate1 = MethodsRepository.ReTestDisplay;<br/>
- delegate1.Invoke();
- 
- #### 8.Return a Delegate
- var del = MethodsRepository.GetDisplayMethod();
- del.Invoke();
- 
- #### 9.Pass delegate as parameter
- MethodsRepository.InvokeDelegate(delegate1);
+ #### 2.Fundamentals : Collections, Out and Ref, Difference between string and StringBuilder, Pass by Reference and using Ref keyword etc.
