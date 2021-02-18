@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConceptDemo.UI", "ConceptDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConceptDemo.Contracts", "ConceptDemo.Contracts\ConceptDemo.Contracts.csproj", "{2538256F-9C60-4868-AA0F-88EC1C455103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals", "Fundamentals\Fundamentals.csproj", "{8DD60D1E-9E8B-4D76-8FD4-624844C909F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fundamentals", "Fundamentals\Fundamentals.csproj", "{8DD60D1E-9E8B-4D76-8FD4-624844C909F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{8BDCC737-802E-424E-B85C-15D71A10AC5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8DD60D1E-9E8B-4D76-8FD4-624844C909F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DD60D1E-9E8B-4D76-8FD4-624844C909F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DD60D1E-9E8B-4D76-8FD4-624844C909F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDCC737-802E-424E-B85C-15D71A10AC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDCC737-802E-424E-B85C-15D71A10AC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDCC737-802E-424E-B85C-15D71A10AC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDCC737-802E-424E-B85C-15D71A10AC5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

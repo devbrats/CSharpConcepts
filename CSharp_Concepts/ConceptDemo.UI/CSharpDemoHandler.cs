@@ -2,6 +2,7 @@
 using EventsAndDelegates;
 using System;
 using Fundamentals;
+using Generics;
 
 namespace ConceptDemo.UI
 {
@@ -17,6 +18,8 @@ namespace ConceptDemo.UI
                     return new DelegateDemoFactory();
                 case 2:
                     return new FundamentalsDemoFactory();
+                case 3:
+                    return new GenericsDemoFactory();
                 default:
                     return null;
             }
@@ -28,6 +31,7 @@ namespace ConceptDemo.UI
             Console.WriteLine("Available CSharp Demo:");
             Console.WriteLine("1. Events and Delegate");
             Console.WriteLine("2. Fundamentals Demo");
+            Console.WriteLine("3. Generics Demo");
             Console.Write("Please Enter your choice for the demo type : ");
         }
     }
