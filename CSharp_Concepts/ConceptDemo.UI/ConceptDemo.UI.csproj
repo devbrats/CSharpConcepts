@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj" />
     <ProjectReference Include="..\Fundamentals\Fundamentals.csproj" />
+    <ProjectReference Include="..\Generics\Generics.csproj" />
   </ItemGroup>
 
 </Project>

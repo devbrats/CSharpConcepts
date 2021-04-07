@@ -7,36 +7,36 @@ namespace EventsAndDelegates
     {
         public void ShowDemo()
         {
-            Console.WriteLine("DelegatesDemo");
-
             // Creating Delegate Example Class Object
             var delegateExample = new DelegateExampleClass();
             
             // Delegate Overriding or Assignment
             delegateExample.TestDelegateObj = TestMethod;
-            Console.WriteLine("\nTestMethod is assigned to delegateExample.TestDelegateObj");
-            Console.WriteLine("delegateExample.TestDelegateObj is invoking.");
+            Console.WriteLine("\nDelegate Overriding or Assignment => delegateExample.TestDelegateObj = DelegatesDemo.TestMethod");
+            Console.WriteLine("Delegate Invocation => delegateExample.TestDelegateObj()");
             delegateExample.TestDelegateObj();
 
             // Delegate Registering
             delegateExample.TestDelegateObj += TestMethod2;
-            Console.WriteLine("\nTestMethod2 is registered for delegateExample.TestDelegateObj");
+            Console.WriteLine("\nDelegate Registering => delegateExample.TestDelegateObj += DelegatesDemo.TestMethod2");
 
             // Delegate Invocation
-            Console.WriteLine("delegateExample.TestDelegateObj is invoking.");
+            Console.WriteLine("Delegate Invocation => delegateExample.TestDelegateObj()");
             delegateExample.TestDelegateObj();
-            Console.WriteLine("delegateExample.ParametrisedTestDelegateObj is invoking.");
+
+            // Parametrised Delegate Invocation
+            Console.WriteLine("\nPrametrised Delegate Invocation => delegateExample.ParametrisedTestDelegateObj(parameter)");
             delegateExample.ParametrisedTestDelegateObj("Invoking from ShowDemo");
 
             // Delegate Invocation with return value
-            Console.WriteLine("delegateExample.TestDelegateWithReturnValueObj is invoking.");
+            Console.WriteLine("Delegate Invocation with return value => var result = delegateExample.TestDelegateWithReturnValueObj()");
             var result = delegateExample.TestDelegateWithReturnValueObj();
             Console.WriteLine("Showing result return from delegate invocation : " + result);
 
             // Delegate Deregistering
             delegateExample.TestDelegateObj -= TestMethod2;
-            Console.WriteLine("\nTestMethod2 is deregistered for delegateExample.TestDelegateObj");
-            Console.WriteLine("delegateExample.TestDelegateObj is invoking.");
+            Console.WriteLine("\nDelegate Deregistering => delegateExample.TestDelegateObj -= TestMethod2");
+            Console.WriteLine("Delegate Invocation => delegateExample.TestDelegateObj()");
             delegateExample.TestDelegateObj();
 
         }

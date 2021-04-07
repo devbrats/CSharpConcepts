@@ -28,16 +28,12 @@ namespace EventsAndDelegates
 
         public void Method1()
         {
-            Console.WriteLine("**********");
             Console.WriteLine(this+"\nInside Method 1.");
-            Console.WriteLine("**********\n");
         }
 
         public void Method2()
         {
-            Console.WriteLine("**********");
             Console.WriteLine(this+"\nInside Method 2.");
-            Console.WriteLine("**********\n");
         }
 
         public string Method3()
@@ -47,10 +43,8 @@ namespace EventsAndDelegates
 
         public void ParametrisedMethod1(string input)
         {
-            Console.WriteLine("**********");
             Console.WriteLine(this + "\nInside parametrised Method 1.");
             Console.WriteLine("Input Value : " + input);
-            Console.WriteLine("**********\n");
         }
     }
 }

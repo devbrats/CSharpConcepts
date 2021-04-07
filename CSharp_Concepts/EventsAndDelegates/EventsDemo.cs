@@ -7,26 +7,25 @@ namespace EventsAndDelegates
     {
         public void ShowDemo()
         {
-            Console.WriteLine("Events Demo");
             var eventsExample = new EventExampleClass();
             eventsExample.TestEvent += TestMethod;
-            Console.WriteLine("\nTestMethod handler is registered to eventsExample.TestEvent");
+            Console.WriteLine("\nEvent Registered => eventsExample.TestEvent += TestMethod");
 
             //Event Invocation
             eventsExample.RaiseTestEvent();
-            eventsExample.RaiseParametrisedTestEvent("Invoking from Events Demo Class");
+            eventsExample.RaiseParametrisedTestEvent("Raise Parametrised Event => eventsExample.RaiseParametrisedTestEvent");
 
             //Event Overriding Not allowed
             //eventsExample.TestEvent = TestMethod2();
             eventsExample.TestEvent += TestMethod2;
-            Console.WriteLine("TestMethod2 handler is registered to eventsExample.TestEvent");
+            Console.WriteLine("Event Registered => eventsExample.TestEvent += TestMethod2");
 
             //Event Invocation
             eventsExample.RaiseTestEvent();
 
             //Event Deregistering
             eventsExample.TestEvent -= TestMethod;
-            Console.WriteLine("\nTestMethod handler is deregistered to eventsExample.TestEvent");
+            Console.WriteLine("\nEvent DeRegistered => eventsExample.TestEvent -= TestMethod");
 
             //Event Invocation
             eventsExample.RaiseTestEvent();

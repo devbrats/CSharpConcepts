@@ -28,11 +28,11 @@ namespace ConceptDemo.UI
         private void ShowDemoOptions()
         {
             Console.WriteLine(Utility.LineSeprator);
-            Console.WriteLine("Available CSharp Demo:");
+            Console.WriteLine("CSharp Demo:");
             Console.WriteLine("1. Events and Delegate");
             Console.WriteLine("2. Fundamentals Demo");
             Console.WriteLine("3. Generics Demo");
-            Console.Write("Please Enter your choice for the demo type : ");
+            Console.Write("Enter your choice for the demo : ");
         }
     }
 }

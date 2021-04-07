@@ -7,13 +7,17 @@ namespace ConceptDemo.UI
     {
         static void Main(string[] args)
         {
+            CSharpDemoHandler demoHandler = new CSharpDemoHandler();
             IDemoFactory demoFactory=null;
+            string navigationText ;
             int choice = 1;
-            while (choice == 1||choice==2)
+
+            do
             {
+                navigationText = $"{demoHandler}>";
+                Console.Clear();
                 if (choice == 1)
                 {
-                    var demoHandler = new CSharpDemoHandler();
                     demoFactory = demoHandler.SelectDemoFactory();
                     if (demoFactory == null)
                     {
@@ -21,8 +25,13 @@ namespace ConceptDemo.UI
                         return;
                     }
                 }
-               Console.Clear();
-                var demo = demoFactory?.SelectDemo();
+
+                Console.Clear();
+                navigationText += $"{demoFactory}>";
+                Console.WriteLine(navigationText);
+
+                IConceptDemo demo = demoFactory?.SelectDemo();
+
                 if (demo == null)
                 {
                     Console.WriteLine("Selected demo not available");
@@ -30,20 +39,21 @@ namespace ConceptDemo.UI
                 }
 
                 Console.Clear();
+                navigationText += $"{demo}>";
+                Console.WriteLine(navigationText);
+
                 demo.ShowDemo();
 
-                Console.WriteLine("\n"+Utility.LineSeprator);
+                Console.WriteLine("\n" + Utility.LineSeprator);
                 Console.WriteLine("Options:");
                 Console.WriteLine("1. Go To Main Menu.");
                 Console.WriteLine("2. Go To Sub Menu.");
                 Console.Write("Please select your choice: ");
                 choice = int.Parse(Console.ReadLine());
-                if (choice != 1 && choice != 2)
-                {
-                    break;
-                }
-                Console.Clear();
+
             }
+            while (choice == 1 || choice == 2);
+            Console.WriteLine("Wrong Choice !.");
 
         }
     }
