@@ -13,13 +13,13 @@ namespace Fundamentals
             switch (demoChoice)
             {
                 case 1:
-                    return new DifferenceBetweenStringAndStringBuilder();
+                    return new StringAndStringBuilder();
                 case 2:
-                    return new DifferenceBetweenOutAndRef();
+                    return new OutAndRef();
                 case 3:
-                    return new DifferenceBetweenPassingReferenceTypeUsingRefKeywordAndWithoutRef();
+                    return new PassingByReferenceUsingRefOrWithoutRefKeyword();
                 case 4:
-                    return new CollectionsInCSharp();
+                    return new Collections();
                 default:
                     return null;
             }
@@ -29,9 +29,9 @@ namespace Fundamentals
         {
             Console.WriteLine("\n"+Utility.LineSeprator);
             Console.WriteLine("Fundamentals Demo: ");
-            Console.WriteLine("1. Difference between string and stringbuilder");
-            Console.WriteLine("2. Difference between 'out' and 'ref'");
-            Console.WriteLine("3. Difference between passing reference type value with or without using 'ref' keyword");
+            Console.WriteLine("1. String and Stringbuilder");
+            Console.WriteLine("2. 'out' and 'ref'");
+            Console.WriteLine("3. Passing reference type value with or without using 'ref' keyword");
             Console.WriteLine("4. Collections in CSharp");
             Console.Write("Please enter your choice for fundamentals demo type : ");
         }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Fundamentals
 {
-    public class CollectionsInCSharp : IConceptDemo
+    public class Collections : IConceptDemo
     {
         public void ShowDemo()
         {

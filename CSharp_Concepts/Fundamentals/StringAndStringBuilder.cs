@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Fundamentals
 {
-    public class DifferenceBetweenStringAndStringBuilder : IConceptDemo
+    public class StringAndStringBuilder : IConceptDemo
     {
         private string _stringType;
         private StringBuilder _stringBuilderType;
 
-        public DifferenceBetweenStringAndStringBuilder()
+        public StringAndStringBuilder()
         {
             _stringType = string.Empty;
         }
@@ -23,20 +23,22 @@ namespace Fundamentals
 
         private void AnalyzeString()
         {
-            Console.WriteLine("\n");
-            Console.WriteLine(Utility.LineSeprator);
+            Console.WriteLine("\n"+Utility.LineSeprator);
             Console.WriteLine("string analysis");
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
-            Console.WriteLine("Text Added.");
+
+            Console.WriteLine("\nText Added => _stringType = \"Text Added.\"");
             _stringType = "Text Added.";
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
-            Console.WriteLine("Text Appended.");
+
+            Console.WriteLine("\nText Appended => _stringType = _stringType + \"Text Appended.\"");
             _stringType = _stringType + "Text Appended.";
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
-            Console.WriteLine("Text override.");
+
+            Console.WriteLine("\nText override => _stringType = \"Text override.\"");
             _stringType = "Text override.";
             Console.WriteLine("String Value: " + _stringType);
             Console.WriteLine("Object HashCode: " + _stringType.GetHashCode());
@@ -47,23 +49,26 @@ namespace Fundamentals
 
         private void AnalyzeStringBuilder()
         {
-            Console.WriteLine("\n");
-            Console.WriteLine(Utility.LineSeprator);
+            Console.WriteLine("\n"+Utility.LineSeprator);
             Console.WriteLine("StringBuilder analysis");
             Console.WriteLine("Object HashCode: " + _stringBuilderType?.GetHashCode());
-            Console.WriteLine("Text Added.");
+            Console.WriteLine("\nText Added =>  _stringBuilderType = new StringBuilder(\"Text Initialized\")");
             _stringBuilderType = new StringBuilder("Text Initialized");
             Console.WriteLine("String Builder Value: " + _stringBuilderType);
             Console.WriteLine("Object HashCode: " + _stringBuilderType.GetHashCode());
-            Console.WriteLine("Text Appended.");
+
+            Console.WriteLine("\nText Appended => _stringBuilderType.Append(\"Text Appended.\")");
             _stringBuilderType.Append("Text Appended.");
             Console.WriteLine("String Builder Value: " + _stringBuilderType);
             Console.WriteLine("Object HashCode: " + _stringBuilderType.GetHashCode());
-            Console.WriteLine("Text override.");
+
+            Console.WriteLine("\nText override =>   _stringBuilderType.Clear();\n"
+           +" _stringBuilderType.Append(\"Text Override\"); ");
             _stringBuilderType.Clear();
             _stringBuilderType.Append("Text Override");
             Console.WriteLine("String Builder Value: " + _stringBuilderType);
             Console.WriteLine("Object HashCode: " + _stringBuilderType.GetHashCode());
+
             Console.WriteLine("\nEverytime when a operation is performed object is not changed only content is changed.\nStringBuilder is a mutable type object.");
             Console.WriteLine(Utility.LineSeprator);
         }
