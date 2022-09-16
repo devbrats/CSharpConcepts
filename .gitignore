@@ -2,14 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/CSharp_Concepts/.vs
-/CSharp_Concepts/EventsAndDelegates/obj
-/CSharp_Concepts/EventsAndDelegates/bin/Debug
-/CSharp_Concepts/ConceptDemo.Contracts/obj
-/CSharp_Concepts/ConceptDemo.Contracts/bin/Debug
-/CSharp_Concepts/ConceptDemo.UI/obj
-/CSharp_Concepts/ConceptDemo.UI/bin/Debug
-/CSharp_Concepts/Fundamentals/obj
-/CSharp_Concepts/Fundamentals/bin/Debug
-/CSharp_Concepts/Generics/obj
-/CSharp_Concepts/Generics/bin/Debug
+.vscode
+**/.vs/
+**/bin/*
+**/obj/*
